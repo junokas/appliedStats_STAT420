@@ -1,0 +1,46 @@
+# Analysis of Variance
+
+> "To find out what happens when you change something, it is necessary to change it."
+>
+> --- **Box, Hunter, and Hunter**, Statistics for Experimenters (1978)
+
+- discuss exp vs prediction
+
+
+```{r}
+library(xtable)
+fm1       = aov(tlimth ~ sex * ethnicty, data = tli)
+fm1_table = xtable(fm1)
+knitr::kable(fm1_table)
+# figure out how to omit NAs in output
+```
+
+A/B Testing Example.
+
+plot for pairwise comparisons, call plot on results of TukeyHSD()
+link to FDR, etc.
+
+
+- stat significance vs practical significance, effect size
+
+- interaction plot
+
+
+
+
+## Two-Sample t
+
+## ANOVA
+
+- consider moving kw to "fixes" chapter
+
+## Multiple Comparisons
+
+- `tukeyHSD()`
+- no scheffe
+
+## Two-Way ANOVA
+
+## Factorial Design
+
+## As Linear Model
